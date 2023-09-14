@@ -85,9 +85,6 @@ def send_client_reply(response, RW, connection_socket):
 		#print ("Sent: " + reply)
 	
 def main():
-
-	
-
 	while 1:
 		response = ""
 		connection_socket, addr = server_socket.accept()

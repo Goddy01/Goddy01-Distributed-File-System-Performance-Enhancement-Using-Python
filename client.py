@@ -39,12 +39,6 @@ def main():
             client_lib.send_directory_service(client_socket, "", True)
             client_socket.close()
 
-        #if "<create>" in client_input:
-        #    while not client_lib.check_valid_input(client_input):       # error check the input
-        #         client_input = sys.stdin.readline()
-        #    filename = client_input.split()[1]
-        #    client_lib.create_file(filename)
-
         if "<instructions>" in client_input:
             client_lib.instructions()
 
