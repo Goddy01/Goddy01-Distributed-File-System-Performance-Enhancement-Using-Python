@@ -24,7 +24,7 @@ def read_write(filename, RW, text, file_version_map):
 			return (empty_msg, -1)			
 
 
-	elif RW == "a+":	# if write request
+	elif RW == "a+":	# if write request action
 
 		if filename not in file_version_map:
 			file_version_map[filename] = 0		# if empty (ie. if its a new file), set the version no. to 0
